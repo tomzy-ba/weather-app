@@ -6,3 +6,8 @@
 #weatherDiv p {
     background-color: whitesmoke;
 }
+
+
+.hidden {
+    display: none;
+}
