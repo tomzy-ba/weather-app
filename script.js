@@ -7,15 +7,14 @@ async function getWeather(locationVar) {
     console.log(weatherData)
 
     const weatherDiv = document.querySelector("#weatherDiv");
-    const tempSpan = document.querySelector("#tempSpan");
-    const conditionSpan = document.querySelector("#conditionSpan");
+    const tempSpan = document.querySelector("#temp");
+    const status = document.querySelector("#status");
     const windSpeed = document.querySelector("#windSpeed");
 
 
     tempSpan.innerText = weatherData.current.temp_c;
-    conditionSpan.innerText = weatherData.current.condition.text;
-    windSpeed.innerText = weatherData.current.wind_mph;
-
+    status.innerText = weatherData.current.condition.text;
+    windSpeed.innerText = weatherData.current.wind_mph + "mph"
 }
 
 document.querySelector("form").addEventListener("submit", (event) => {

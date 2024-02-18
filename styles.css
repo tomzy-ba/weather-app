@@ -1,4 +1,8 @@
-#weatherDiv span {
+#weatherDiv {
+    display: flex;
+    gap:30px;
+}
+
+#weatherDiv p {
     background-color: whitesmoke;
-    font-size: large;
 }
