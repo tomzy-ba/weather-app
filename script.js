@@ -9,9 +9,12 @@ async function getWeather(locationVar) {
     const weatherDiv = document.querySelector("#weatherDiv");
     const tempSpan = document.querySelector("#tempSpan");
     const conditionSpan = document.querySelector("#conditionSpan");
+    const windSpeed = document.querySelector("#windSpeed");
+
 
     tempSpan.innerText = weatherData.current.temp_c;
     conditionSpan.innerText = weatherData.current.condition.text;
+    windSpeed.innerText = weatherData.current.wind_mph;
 
 }
 
